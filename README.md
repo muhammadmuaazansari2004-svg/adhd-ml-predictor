@@ -124,28 +124,6 @@ pip install -r requirements.txt
 
 ---
 
-## 🌐 Deployment Ideas
-
-### Streamlit Cloud (Easiest)
-1. Push your repo to GitHub (no model/pickles)
-2. Connect to Streamlit Cloud
-3. Add a setup step that downloads the model at startup
-4. Deploy one-click ✨
-
-### Docker
-Build a container with all dependencies. Mount model/pickles from external storage (S3, etc.).
-
-### Production Server
-Use Gunicorn + Streamlit's server mode. Load model from S3 or similar at startup.
-
-### Model Hosting
-- **Hugging Face Model Hub** — free, simple
-- **AWS S3** — scalable, reliable
-- **Google Cloud Storage** — similar to S3
-- **GitHub Releases** — quick and dirty for small models
-
----
-
 ## 🧪 What's Inside `app.py`
 
 The code is intentionally minimal:
