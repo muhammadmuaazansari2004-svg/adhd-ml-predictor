@@ -97,13 +97,12 @@ adhd-ml-predictor/
 ├── LICENSE               # Project license
 ├── .gitignore            # Excludes large files from Git
 │
-├── pickle/               # (Not in Git, download separately)
+├── pickle/               
 │   ├── columns.pkl
 │   ├── encoded_columns.pkl
 │   └── scaler.pkl
 │
-└── model_base.h5         # (Not in Git, download separately)
-```
+└── model_base.h5         
 
 **Why not commit the model & pickles?** They're heavy and binary. Use Git LFS or host them externally (Hugging Face, AWS S3, etc.).
 
@@ -155,60 +154,4 @@ The code is intentionally minimal:
 - **Direct preprocessing** — matches training exactly
 - **ADHD-friendly design** — simple UI, no distractions
 
-No heavy try/except blocks. If something's wrong, you'll know immediately.
 
----
-
-## 🎓 What You'll Learn
-
-- How to align preprocessing between training & inference
-- Streamlit for building quick ML UIs
-- Handling one-hot encoding with `drop_first=True`
-- Scaling data consistently (fit on training, transform on inference)
-- Git/GitHub workflows for ML projects
-- Why model/data artifacts shouldn't live in Git
-
----
-
-## ⚠️ Important Disclaimer
-
-**This is NOT a medical tool.** This is educational. ADHD diagnosis requires a real clinician, not a spreadsheet + neural network. If you or someone you know suspects ADHD, talk to a professional.
-
-This project uses **synthetic data**, not real patient data. It's for learning how ML works, period.
-
----
-
-## 🤝 Contributing
-
-Found a bug? Have ideas? Cool—open an issue or submit a PR. Keep it simple, keep it clean.
-
----
-
-## 📜 License
-
-See `LICENSE` file. (You already set one up locally, so respect that.)
-
----
-
-## 💡 Random Tips
-
-- **Local testing:** Run `streamlit run app.py` and play with inputs. See if predictions feel reasonable.
-- **Debugging:** Check that `columns.pkl` matches your training columns exactly. Off-by-one errors are silent killers.
-- **ADHD-friendly coding:** Write code like you're explaining it to someone with brain fog—be explicit, avoid clever tricks.
-- **Git workflow:** Always `.gitignore` your model. Always. Your repo will thank you.
-
----
-
-## 🚀 What's Next?
-
-- Add CI/CD to validate preprocessing on every push
-- Host the model on Hugging Face & auto-download at startup
-- Build a Flask API wrapper for non-Streamlit deployments
-- Add unit tests for preprocessing parity
-- Create a mobile app version
-
-You got this. Ship it. 🎉
-
----
-
-**Made with care for the neurodivergent community. Ship clean code. Keep it simple.** ✨
