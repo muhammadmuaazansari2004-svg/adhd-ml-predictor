@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Model and data artifacts (use Git LFS or host externally)
+model_base.h5
+*.h5
+
+# Pickle files (store separately or use Git LFS)
+pickle/*.pkl
+
+# Local datasets
+colab_dataset.csv
+dataset/
+*.csv
+
+# Jupyter Notebook (local experimentation)
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE and OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Streamlit cache
+.streamlit/
